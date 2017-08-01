@@ -1,0 +1,5 @@
+package com.uma.myBatisExample.dto;
+
+public class User {
+
+}

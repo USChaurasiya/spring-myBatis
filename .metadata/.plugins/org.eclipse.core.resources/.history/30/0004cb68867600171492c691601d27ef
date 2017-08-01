@@ -1,0 +1,45 @@
+package com.uma.myBatisExample.dao;
+
+import com.howtodoinjava.ibatis.demo.dto.UserTEO;
+import com.ibatis.sqlmap.client.SqlMapClient;
+import com.uma.myBatisExample.dto.User;
+
+public class UserDAOImpl implements UserDao {
+
+	public User addUser(User user, SqlMapClient sqlmapClient) {
+		try
+		{
+			Integer id = (Integer)sqlmapClient.queryForObject("user.getMaxId");
+			id = id == null ? 1 : id + 1;
+			user.setId(id);
+			user.setStatus(1);
+			sqlmapClient.insert("user.addUser", user);
+			user = getUserById(id, sqlmapClient);
+			return user;
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}	
+		return null;
+	}
+
+	public User getUserById(Integer id, SqlMapClient sqlmapClient) {
+		try
+		{
+			User user = (User)sqlmapClient.queryForObject("user.getUserById", id);
+			return user;
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}	
+		return null;
+	}
+
+	public void deleteUserById(Integer id, SqlMapClient sqlmapClient) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

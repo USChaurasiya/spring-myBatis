@@ -1,0 +1,5 @@
+package com.uma.mapper;
+
+public interface StudentMapper {
+
+}

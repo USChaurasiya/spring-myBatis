@@ -1,0 +1,23 @@
+package com.uma.myBatisExample.dao;
+
+import com.ibatis.sqlmap.client.SqlMapClient;
+import com.uma.myBatisExample.dto.User;
+
+public class UserDAOImpl implements UserDao {
+
+	public User addUser(User user, SqlMapClient sqlmapClient) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public User getUserById(Integer id, SqlMapClient sqlmapClient) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void deleteUserById(Integer id, SqlMapClient sqlmapClient) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

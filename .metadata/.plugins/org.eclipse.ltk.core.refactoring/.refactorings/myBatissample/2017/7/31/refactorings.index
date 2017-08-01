@@ -1,0 +1,4 @@
+1501486728012	Rename resource 'springConfig.xml'
+1501496822358	Rename resource 'myBatisServlet.xml'
+1501496829337	Move 'myBatisServlet-servlet.xml' to 'WEB-INF'
+1501497778690	Rename resource 'myBatisServlet-servlet.xml'

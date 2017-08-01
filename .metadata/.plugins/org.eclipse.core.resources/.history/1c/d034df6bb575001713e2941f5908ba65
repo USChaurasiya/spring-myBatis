@@ -1,0 +1,6 @@
+package com.uma.service;
+
+public class StudentServiceImpl implements StudentService{
+	
+
+}
