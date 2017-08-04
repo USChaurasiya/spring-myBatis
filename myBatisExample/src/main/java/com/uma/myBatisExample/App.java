@@ -29,7 +29,7 @@ public class App
 		user.setName("Uma Shankar");
 		user.setPassword("123");
 		user.setEmail("shankar.uma35@gmail.com");
-		user.setStatus(2);
+		user.setStatus(1);
 		
 		manager.addUser(user,sqlmapClient);
 		

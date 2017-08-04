@@ -1,0 +1,20 @@
+package com.uma.myBatisUsingAnnotation.factory;
+
+public class ConnectionFactory {
+
+	private static SqlSessionFactory sqlMapper;
+	private static Reader reader; 
+
+	static{
+		try{
+			reader	  = Resources.getResourceAsReader("configuration.xml");
+			sqlMapper = new SqlSessionFactoryBuilder().build(reader);
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+
+	public static SqlSessionFactory getSession(){
+		return sqlMapper;
+	}
+}

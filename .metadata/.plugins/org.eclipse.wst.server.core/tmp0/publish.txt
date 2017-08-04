@@ -1,4 +1,2 @@
 #Tomcat publish data
-#Tue Aug 01 09:46:34 IST 2017
-org.eclipse.jst.j2ee.server\:/binary\:/home/bridgeit/.m2/repository/org/springframework/spring-web/4.3.3.RELEASE/spring-web-4.3.3.RELEASE.jar=WEB-INF/lib/spring-web-4.3.3.RELEASE.jar
-org.eclipse.jst.jee.server\:/binary\:/home/bridgeit/.m2/repository/org/springframework/spring-web/3.2.4.RELEASE/spring-web-3.2.4.RELEASE.jar=WEB-INF/lib/spring-web-3.2.4.RELEASE.jar
+#Fri Aug 04 16:16:41 IST 2017

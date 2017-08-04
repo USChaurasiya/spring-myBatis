@@ -1,0 +1,5 @@
+package com.uma.crudOperationUsingMyBatis.factory;
+
+public class MyBatisConnectionFactory {
+
+}

@@ -1,0 +1,5 @@
+package com.uma.myBatisUsingAnnotation.dto;
+
+public class User {
+
+}
